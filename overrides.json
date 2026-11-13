@@ -1,0 +1,7 @@
+{
+  "_comment": "Per-repo tweaks for repos whose name doesn't say enough. Keys are repo names. Any field here wins over what build.mjs guesses.",
+  "Math-2183-study-guide": { "title": "Linear Algebra & ODEs" },
+  "MATH-2201-Study-Guide": { "title": "Coordinate Geometry" },
+  "SPL": { "code": "SPL", "subject": "cse", "title": "Structured Programming Language (C)" },
+  "Edexcel-IGCSE-Physics-Notes": { "code": "IGCSE", "subject": "igcse", "title": "Edexcel IGCSE Physics" }
+}
