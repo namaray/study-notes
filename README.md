@@ -17,6 +17,8 @@ It writes `dist/index.html` from `template.html`, and the workflow in `.github/w
 2. Name it with the course code (e.g. `CSE-3811-Artificial-Intelligence`) so the code and title are read from the name.
 3. If the name doesn't say enough, add an entry to `overrides.json` (`code`, `title`, `subject`, `summary`).
 
+To leave a tagged repo off the page, give it `"hidden": true` in `overrides.json`.
+
 The text after the colon in the repo description becomes the card's summary.
 
 ## Building locally

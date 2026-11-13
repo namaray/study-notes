@@ -95,6 +95,7 @@ const overrides = JSON.parse(await readFile(new URL("./overrides.json", import.m
 const guides = (await fetchRepos())
   .filter((r) => !r.private && !r.fork && !r.archived && r.has_pages && r.name !== SELF)
   .filter((r) => (r.topics || []).some((t) => TOPICS.includes(t)))
+  .filter((r) => !overrides[r.name]?.hidden)
   .map((r) => describe(r, overrides[r.name]))
   .sort((a, b) => (a.code || a.title).localeCompare(b.code || b.title, "en", { numeric: true }));
 
